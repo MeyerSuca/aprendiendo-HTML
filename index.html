@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aprendiendo html</title>
+    <title>aprendiendo html-css-js</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Aprendiendo HTML</h1>
-    <h2>Etiquetas "h1",..."h6"</h2>
-    <p>Sirven para la creación de titulos, según el numero será el tamaño del titulo</p>
-    <p>Datos: solo debe de haber una etiqueta h1 en una pagina, el resto si, cuantos quieras.</p>
-    <h2>Etiqueta "p"</h2>
-    <p>Esta etiqueta sirve para la creacion de texto en el sitio web</p>
-    <h2>Etiquetas Anchor "a"</h2>
-    <p>Esta etiqueta sirve para la creación de enlaces, todo lo que este dentro de esta etiqueta será un enlace</p>
-    <h2>Etiquetas: unsorted list"ul" y order list"ol"</h2>
-    <p>Etiqueta que sirve para la creacion de listas, ya sea ordenadas o desordenadas</p>
-    <h3>Etiqueta "li"</h3>
-    <p>Esta etiqueta debe de estar dentro de las etiquetas "ol" o "ul", sirve para agregar elementos, cada uno es un elemento</p>
-    <h2>Etiqueta "div"</h2>
-    <p>Sirve como un contenedor para agrupar elementos y estructurar mejor nuestras paginas</p>
-    <h2>Etiqueta "header"</h2>
-    <p>Esta etiqueta sirve para crear un encabezado, dentro de esta etiqueta van el logo o nombre de la pagina, tambien la barra de navegacion</p>
-    <h2>Etiqueta: "footer"</h2>
-    <p>Esta etiqueta sirve para crear el pie de pagina, lugar donde van informacion general, derechos de autor, terminos y condiciones, etc</p>
-    <h2>Etiqueta de imagen: "img"</h2>
-    <p>Esta etiqueta sirve para insertar imagenes en nuestro sitio web</p>
-    <h2>Etiqueta de tablas: "table"</h2>
-    <p>Etiqueta para la creacion de tablas</p>
-    <h3>Etiqueta: "tr"</h3>
-    <p>etiqueta que crea columnas dentro de la tabla</p>
-    <h3>Etiqueta: "th"</h3>
-    <p>Etiqueta que crea cabecera de una tabla, para agregar titulos a las columnas</p>
-    <h3>Etiqueta: "td"</h3>
-    <p>Etiqueta que crea filas, para agregar contenido</p>
+    <header class="cabecera" id="cabecera">
+        <h1>Aprendiendo HTML, CSS y Javascript</h1>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">Javascript</a></li>
+            </ul>
+            <a id="tema" href="#">tema</a>
+        </nav>
+    </header>
+    <div id="html" class="contenedor-html">
+        <h2>Aprendiendo HTML</h2>
+        <p>Es un lenguaje de demarcado para esquematizar un sitio web, entiendase como el esqueleto del sitio web</p>
+        <h2>Etiquetas "h1",..."h6"</h2>
+        <p>Sirven para la creación de titulos, según el numero será el tamaño del titulo</p>
+        <p>Datos: solo debe de haber una etiqueta h1 en una pagina, el resto si, cuantos quieras.</p>
+        <h2>Etiqueta "p"</h2>
+        <p>Esta etiqueta sirve para la creacion de texto en el sitio web</p>
+        <h2>Etiquetas Anchor "a"</h2>
+        <p>Esta etiqueta sirve para la creación de enlaces, todo lo que este dentro de esta etiqueta será un enlace</p>
+        <h2>Etiquetas: unsorted list"ul" y order list"ol"</h2>
+        <p>Etiqueta que sirve para la creacion de listas, ya sea ordenadas o desordenadas</p>
+        <h3>Etiqueta "li"</h3>
+        <p>Esta etiqueta debe de estar dentro de las etiquetas "ol" o "ul", sirve para agregar elementos, cada uno es un elemento</p>
+        <h2>Etiqueta "div"</h2>
+        <p>Sirve como un contenedor para agrupar elementos y estructurar mejor nuestras paginas</p>
+        <h2>Etiqueta "header"</h2>
+        <p>Esta etiqueta sirve para crear un encabezado, dentro de esta etiqueta van el logo o nombre de la pagina, tambien la barra de navegacion</p>
+        <h2>Etiqueta: "footer"</h2>
+        <p>Esta etiqueta sirve para crear el pie de pagina, lugar donde van informacion general, derechos de autor, terminos y condiciones, etc</p>
+        <h2>Etiqueta de imagen: "img"</h2>
+        <p>Esta etiqueta sirve para insertar imagenes en nuestro sitio web</p>
+        <h2>Etiqueta de tablas: "table"</h2>
+        <p>Etiqueta para la creacion de tablas</p>
+        <h3>Etiqueta: "tr"</h3>
+        <p>etiqueta que crea columnas dentro de la tabla</p>
+        <h3>Etiqueta: "th"</h3>
+        <p>Etiqueta que crea cabecera de una tabla, para agregar titulos a las columnas</p>
+        <h3>Etiqueta: "td"</h3>
+        <p>Etiqueta que crea filas, para agregar contenido</p>
+        <h2>Formulario: "form"</h2>
+        <p>Etiqueta para la creacion de formularios</p>
+        <h3>Etiqueta: "Input"</h3>
+        <p>Sirve para la creacion de espacios para recavar datos del usuario</p>
+        <h3>"Label"</h3>
+        <p>Etiqueta que sirve para asociar a inputs y es donde van nombres del espacio al que se asocia</p>
+    </div>
+
+    <div id="css" class="contenedor-css">
+        <h2>Aprendiendo CSS</h2>
+        <p>Es un lenguaje de estilos que se encarga de la parte visual que ve el usuario, CSS es quien se encarga de dar una buena presentacion al usuario.</p>
+        <h3>Enlazar elementos HTML con CSS</h3>
+        <p>Para enlazar se recomienda usar clases o id, segun sea el contexto, siendo clases la manera mas usada en general, id es usado en caso se quiera aplicar a un solo elemento, tambien se pueden usar otros tipos de enlazado, pero clases y id sera más usado</p>
+    </div>
+
+    <div id="js" class="contenedor-js">
+        <h2>Aprendiendo Javascript</h2>
+        <p>Javascript es un lenguaje de programacion para la implementacion de dinamicidad a un sitio web</p>
+        <h3>Enlazar un elemento HTML a javascript</h3>
+        <p>para enlazar un elemento se usa un id de nombre unico que debera tener la etiqueta, tambien se puede enlazar por su nombre, clase, etc, pero recomiendan enlazarlo por un id en general</p>
+    </div>
+
+    <script src="./script.js"></script>
 </body>

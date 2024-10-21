@@ -1,0 +1,46 @@
+:root {
+    --color-principal: #777777;
+    --color-de-fondo-claro: #ffffff;
+    --color-de-fondo-oscuro: #404040;
+    --color-de-fondo-cabecera-claro: #d5d5f2;
+}
+
+/*--------------Reseteadores----------------*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-de-fondo-claro);
+    font-family: sans-serif;
+}
+
+
+
+/*------------------------CABECERA---------------------------*/
+.cabecera {
+    background-color: var(--color-de-fondo-cabecera-claro);
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navegacion {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        ul {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
